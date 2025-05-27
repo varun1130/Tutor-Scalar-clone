@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <a id="logo" href="#">
+                <h2><span>SCALER</span> ACADEMY</h2>
+            </a>
+            <div class="nav-links" id="fullNav">
+                <a href="#">Curriculam</a>
+                <a href="#">Placement</a>
+                <a href="#">Mentor</a>
+                <a href="#">Review</a>
+                <a href="#">FAQ</a>
+                <button>Request a call</button>
+            </div>
+            <div class="menu-icon" onclick="openMenu()">
+                ☰
+            </div>
+        </div>
+
+        <!-- Sidebar mobile -->
+        <div class="sidebar" id="sidebar">
+            <span class="close-btn" onclick="closeMenu()">✖</span>
+            <a href="#">Curriculam</a>
+            <a href="#">Placement</a>
+            <a href="#">Mentor</a>
+            <a href="#">Review</a>
+            <a href="#">FAQ</a>
+            <button>Request a Call</button>
+        </div>
+
+        <!-- Overlay -->
+        <div class="overlay" id="overlay" onclick="closeMenu()"></div>
+    </header>
+    <main>
+        <section>
+            <div class="form-content">
+                <ul>
+                    <h1>Full Stack Developer Course by Scaler Academy</h1>
+                    <li>Upskill in <strong>DSA & System Design</strong> with this Full Stack Developer Course</li>
+                    <li>Build <strong>real-world projects</strong> by mastering React, MERN, JavaScript, etc.</li>
+                    <li>Learn the essential <strong>Full Stack development concepts from scratch</strong></li>
+                </ul>
+                <div class="form">
+                    <h3> Free Career Counselling is just a call away!</h3>
+                    <h6> Get guidance and clear your doubts.</h6>
+                    <div>
+                        <h4>
+                            Email ID
+                            <br>
+                            <input type="text" name="" id="" placeholder="Enter your Email ID">
+                        </h4>
+                        <h4>
+                            Graduation Year
+                            <br>
+                            <input type="text" placeholder="Graduation Year" id="">
+                        </h4>
+                        <h4>
+                            Job Title
+                            <br>
+                            <input type="text" name="" id="" placeholder="Select Job Title">
+                        </h4>
+                        <h4>
+                            Mobile Number
+                            <br>
+                            <input type="text" name="" id="" placeholder="+91 Enter your mobile number">
+                        </h4>
+                        <h5>You'll receive an OTP on this number for verification</h5>
+                        <button>Continue</button>
+                        <h6>By creating an account I have read and agree to Scaler’s<a href="#">Terms and Privacy
+                                Policy</a>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="Overview">
+                <div id="title">
+                    Full Stack Web Development Course Overview
+                </div>
+                <div class="data">
+                    <div id="over1">
+                        <div class="header">
+                            <h5>About Scaler Academy's Full Stack Developer Course</h5>
+                        </div>
+                        <div class="body">
+                            <p>
+                                <li>Learn practical coding skills through real-life projects</li>
+                                <li>Structured curriculum covering programming constructs, </li>
+                                <li>Industry-expert faculty and 1:1 mentorship with a peer group of 2,000+ Scaler
+                                    students
+                                    and alumni</li>
+                            </p>
+                        </div>
+                    </div>
+                    <div id="over2">
+                        <div class="header">
+                            <h5>What is Full Stack Web Development and why is it important to learn?</h5>
+                        </div>
+                        <div class="body">
+                            <p>Full Stack Development is a software profession/stream where a developer deals with both
+                                the
+                                Frontend (client-side) and Backend (server-side) of a tech product. A Full Stack
+                                Developer
+                                is proficient in several technologies that help in developing a robust tech product, and
+                                thus play a major role in making decisions for the company. </p>
+                        </div>
+                    </div>
+                    <div id="over3">
+                        <div class="header">
+                            <h5>What skills will I master with this full stack course?</h5>
+                        </div>
+                        <div class="body">
+                            <p>
+                                <li>
+                                    Advanced data structures, problem-solving, and computer science fundamentals.
+                                </li>
+                                <li>Develop software and systems using OOP principles and system design techniques</li>
+                                <li>Build full-stack apps using technologies like REST APIs, MVC,</li>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div id="key-highlights">
+                <h1>Key highlights of the Scaler Academy's Full Stack Developer Program</h1>
+                <p id="key-cont">Scaler Academy's full-stack development program helps you learn exactly everything that
+                    you need to solidify
+                    your tech career</p>
+                <div class="boxes">
+                    <div style="background-color: #003049;">
+                        <p>Structured, industry-vetted curriculum</p>
+                    </div>
+                    <div style="background-color: #52b788;">
+                        <p>Live classes by faculty who have been there, done that</p>
+                    </div>
+                    <div style="background-color: #6930c3;">
+                        <p>Practical experience through real-life projects</p>
+                    </div>
+                    <div style="background-color: #370617;">
+                        <p>Aspirational peer group of 2,000+ Scaler students & alumni</p>
+                    </div>
+                    <div style="background-color: #d00000;">
+                        <p>Regular 1:1 mentorship from industry veterans</p>
+                    </div>
+                    <div style="background-color: #006400;">
+                        <p>Career support via a dedicated recruitment team, alumni network, etc</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div id="career_service">
+                <h1>Career Services</h1>
+                <p>Along with upskilling and preparing you to be a solid engineer, we will help you with your job search
+                    and
+                    interview preparation as well!</p>
+                <p>Scaler alumni work at reputed <strong>tech organizations</strong> and <strong>promising
+                        startups</strong>
+                </p>
+                <div class="company_logo">
+                    <img src="R.png" alt="">
+                    <img src="Amazon_Logo_2000.png" alt="">
+                    <img src="microsoft-logo.png" alt="">
+                    <img src="R.png" alt="">
+                    <img src="Amazon_Logo_2000.png" alt="">
+                    <img src="microsoft-logo.png" alt="">
+                    <img src="R.png" alt="">
+                    <img src="Amazon_Logo_2000.png" alt="">
+                    <img src="microsoft-logo.png" alt="">
+                    <img src="R.png" alt="">
+                    <img src="Amazon_Logo_2000.png" alt="">
+                    <img src="microsoft-logo.png" alt="">
+                    <img src="R.png" alt="">
+                    <img src="Amazon_Logo_2000.png" alt="">
+                    <img src="microsoft-logo.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section>
+            <div id="image_container">
+                <h2>Gain confidence in Full Stack concepts, taught by experienced instructors</h2>
+                <h4>Our faculty comprises experts from Amazon, Google, Hotstar, Facebook, Microsoft to name a few, who
+                    have
+                    successfully built scalable systems</h4>
+                <div class="image_reviews">
+                    <div class="review">
+                        <div class="card_img">
+                        </div>
+                        <div class="employee">
+                            <p>Varun Chakaravarthi</p>
+                            <img src="R.png" alt="">
+                            <hr>
+                            <a href="#">Read More ></a>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <div class="card_img">
+                        </div>
+                        <div class="employee">
+                            <p>Karthik</p>
+                            <img src="R.png" alt="">
+                            <hr>
+                            <a href="#">Read More ></a>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <div class="card_img">
+                        </div>
+                        <div class="employee">
+                            <p>Kamesh</p>
+                            <img src="R.png" alt="">
+                            <hr>
+                            <a href="#">Read More ></a>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <div class="card_img" style="background: url(dq.jpg) ;">
+                        </div>
+                        <div class="employee">
+                            <p>DQ Salman</p>
+                            <img src="R.png" alt="">
+                            <hr>
+                            <a href="#">Read More ></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div id="image_container_1">
+                <h2>Take the informed leap in your career with <strong>guidance and interview prep from our
+                        mentors</strong>
+                </h2>
+                <h4>1:1 Personalised Sessions are held bimonthly. Our mentors have helped thousands of students get
+                    clarity in
+                    their career paths and prepare for interview through mock sessions</h4>
+                <div class="image_reviews">
+                    <div class="review">
+                        <div class="card_img">
+                        </div>
+                        <div class="employee">
+                            <p>Naveen Kumar</p>
+                            <img src="R.png" alt="">
+                            <hr>
+                            <a href="#">Read More ></a>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <div class="card_img">
+                        </div>
+                        <div class="employee">
+                            <p>Aishwarya Rai</p>
+                            <img src="R.png" alt="">
+                            <hr>
+                            <a href="#">Read More ></a>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <div class="card_img">
+                        </div>
+                        <div class="employee">
+                            <p>Gaurav Gupta</p>
+                            <img src="R.png" alt="">
+                            <hr>
+                            <a href="#">Read More ></a>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <div class="card_img">
+                        </div>
+                        <div class="employee">
+                            <p>Elon Musk</p>
+                            <img src="R.png" alt="">
+                            <hr>
+                            <a href="#">Read More ></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div id="course_fee">
+                <h1>To explore all courses</h1>
+                <p>With scholarship & EMI options, your payment can be as low as Rs. 8,628 per month - that's like your
+                    monthly
+                    grocery bill!</p>
+                <button id="openPopup">View Courses</button>
+                <div id="popup" class="popup">
+                    <div class="popup-content">
+                        <span id="closePopup" class="close-btn">&times;</span>
+                        <h1>Course Details</h1>
+                        <p>You can find both no-cost EMI & standard interest EMI from our NBFC partners. See below a
+                            summary of
+                            their best plans (more details available at the time of payment)</p>
+                        <div class="table-responsive">
+                            <table class="table">
+                                <tr>
+                                    <td>Course Name </td>
+                                    <td>Learning Technologies</td>
+                                    <td>Duration</td>
+                                    <td>EMI Option</td>
+                                    <td>Total Amount</td>
+                                </tr>
+                                <tr>
+                                    <td>Full Stack Development</td>
+                                    <td>Html,CSS,JavaScript,React,Python,Django,MySQL</td>
+                                    <td>6 Months</td>
+                                    <td>Rs.6,000 </td>
+                                    <td>Rs.40,000</td>
+                                </tr>
+                                <tr>
+                                    <td>Data Science</td>
+                                    <td>Html,CSS,JavaScript,React,Python,Django,MySQL</td>
+                                    <td>6 Months</td>
+                                    <td>Rs.6,000 </td>
+                                    <td>Rs.40,000</td>
+                                </tr>
+                                <tr>
+                                    <td>DevOps</td>
+                                    <td>Html,CSS,JavaScript,React,Python,Django,MySQL</td>
+                                    <td>4 Months</td>
+                                    <td>Rs.6,000 </td>
+                                    <td>Rs.40,000</td>
+                                </tr>
+                                <tr>
+                                    <td>DotNet Development</td>
+                                    <td>Html,CSS,JavaScript,React,Python,Django,MySQL</td>
+                                    <td>6 Months</td>
+                                    <td>Rs.6,000 </td>
+                                    <td>Rs.40,000</td>
+                                </tr>
+                                <tr>
+                                    <td>CCNA</td>
+                                    <td>Html,CSS,JavaScript,React,Python,Django,MySQL</td>
+                                    <td>3 Months</td>
+                                    <td>Rs.10,000 </td>
+                                    <td>Rs.30,000</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div id="academic_info">
+                <h1>Full Stack Web Development Course FAQs</h1>
+                <div class="para">
+                    <p class="q">What is Scaler Academy's full-stack development program?</p>
+                    <p>Scaler Academy offers a structured, flexible and guided learning program for software engineers
+                        to
+                        accelerate their career. This program is open for all software engineers irrespective of the #
+                        of
+                        years of work experience or their current place of work. Our features are:</p>
+                    <li>Structured curriculum that covers CS Fundamentals and System Design via a project based
+                        approach.
+                        This curriculum has been industry-vetted and reverse-engineered by analysing what it takes to be
+                        a
+                        great engineer</li>
+                    <li>Live classes that are held twice a week, with the timings determined by students in the batch
+                    </li>
+                    <li>Tutors who have built scalable systems in the past and understand the real-life importance of
+                        DSA
+                        and System Design, not just interview-relevant material</li>
+                    <li>Quick doubt resolution from our 100+ Teaching Assistants</li>
+                    <li>Aspirational peer group and access to ScalerChat, our internal communication tool wherein you
+                        can
+                        collaborate with others on projects, get authentic interview experiences and share job-referrals
+                    </li>
+                    <li>Flexible curriculum that help you continue learning despite your hectic work schedule. We
+                        provide
+                        recorded lectures to view later and also allow you to move between batches at NO cost</li>
+                    <li>Career support - we provide job opportunities via our 600+ employer partners, mock interview
+                        services and career planning services</li>
+                </div>
+                <div class="para">
+                    <p class="q">Who is eligible for Scaler Academy's Full Stack course?</p>
+                    <p>Software engineers with any number of years of experience can choose to join Scaler Academy's
+                        Full
+                        Stack program. Applicants currently in college (1st, 2nd, 3rd or final year of college) could
+                        consider to join Scaler Edge, our college student focused product. Please visit
+                        www.scaler.com/edge
+                        for more detail</p>
+                </div>
+                <div class="para">
+                    <p class="q">When are the live classes held?</p>
+                    <p>Live classes are normally held 2 times a week, with the exact class days and timings being
+                        determined
+                        by the batch. However, given all learners would be software engineers that are currently
+                        working,
+                        the classes would be held in the late evening or night on weekdays and any suitable time over
+                        the
+                        weekends.</p>
+                </div>
+                <div class="para">
+                    <p class="q">What happens if I miss a lecture in this online full stack developer course?</p>
+                    <p>All lectures are recorded and you will have access to the recordings after the lecture is
+                        completed.
+                    </p>
+                </div>
+                <div class="para">
+                    <p class="q">Can I attend this full stack developer training part-time?</p>
+                    <p>The program has a fixed schedule, during which you would attend live-lectures with a dedicated
+                        instructor, Teaching Assistant, and personal mentor. 15 hour weekly commitment is required for
+                        the
+                        duration of the program in order to achieve positive results.</p>
+                </div>
+                <div class="para">
+                    <p class="q">Are full stack developers in demand in 2023?</p>
+                    <p>A full-stack developer is one of the high-demand jobs in the industry. Companies pay them
+                        handsomely
+                        since they contribute the most to software projects. Thus, whether you are a fresher or an
+                        experienced developer, you will always be in demand in the software industry, with great
+                        opportunities waiting for you.</p>
+                </div>
+                <div class="para">
+                    <p class="q">What is the process of resolving doubts?</p>
+                    <p>When a student has a doubt, he/she would raise a 'Help Request'. This 'Help Request' would be
+                        circulated within the peer group first in order to foster a sense of giving back and create a
+                        sense
+                        of community. In parallel, the Teaching Assistant is also alerted with regards to this 'Help
+                        Request'. The doubt can then be either clarified via the peer group or via the Teaching
+                        Assistants
+                        via text or via video call. If a video call is done, the Teaching Assistant can also share
+                        his/her
+                        screen to resolve the issue and help you understand the concept better. These video calls are
+                        done
+                        1:1.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div id="footer">
+            <div class="footer_content">
+                <div class="footer_page">
+                    <h2>Scaler</h2>
+                    <p>for more about scaler please visit our website... </p>
+                </div>
+                <div class="footer_page">
+                    <h2>Explore Scaler</h2>
+                    <li><a href="#">Scaler Academy</a></li>
+                    <li><a href="#">Scaler DevOps</a></li>
+                    <li><a href="#">Scaler Data Science & ML</a></li>
+                    <li><a href="#">Scaler School of Technology</a></li>
+                    <li><a href="#">Scaler School of Business</a></li>
+                    <li><a href="#">Scaler Neovarsity</a></li>
+                    <li><a href="#">Become a Mentor</a></li>
+                    <li><a href="#">Become a Career Coach</a></li>
+                </div>
+                <div class="footer_page">
+                    <h2>Resources</h2>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Review</a></li>
+                    <li><a href="#">Join Our Discord</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </div>
+                <div class="footer_page">
+                    <h2>Follow us on</h2>
+                    <li><a href="#"><i class="fa-brands fa-youtube"></i> Youtube</a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i> Twitter</a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+                </div>
+            </div>
+            <div>
+                <hr>
+            </div>
+            <div class="footer_foot">
+                <h2>Tutorials</h2>
+                <p><a href="#">Data Structures Tutorial</a> | <a href="#">Python Tutorial</a> | <a href="#">Java
+                        Tutorial</a> | <a href="#">DBMS Tutorial</a> | <a href="#">C Tutorial</a> | <a
+                        href="#">JavaScript
+                        Tutorial</a> | <a href="#">C++ Tutorial</a> | <a href="#">SQL Tutorial</a> |
+                    <a href="#">Data Science Tutorial</a> | <a href="#">HTML Tutorial</a> | <a href="#">CSS Tutorial</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>

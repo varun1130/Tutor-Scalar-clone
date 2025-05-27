@@ -1,0 +1,906 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: lightgray;
+}
+
+/* Main Navbar */
+header{
+    position: sticky;
+    top: 0;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    padding: 15px 20px;
+    background: #f8f8f8;
+    color: white;
+}
+
+.navbar #logo {
+    text-decoration: none;
+
+}
+
+.navbar span {
+    color: #007bff;
+}
+
+.navbar #logo:hover h2 {
+    color: #007bff;
+    transition:all 0.3s ease-in-out;
+}
+
+.navbar #logo :hover span {
+    color: rgb(85, 26, 139);
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-icon {
+    color: black;
+    cursor: pointer;
+    font-size: 24px;
+    display: none;
+    /* Hidden on desktop */
+}
+
+.navbar button {
+    background: linear-gradient(45deg, #f72585, #03045e);
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+}
+
+.navbar button:hover {
+    background: linear-gradient(90deg, #03045e, #f72585);
+    transform: scale(1.03);
+}
+
+/* Full-size nav links */
+.nav-links {
+    display: flex;
+    gap: 20px;
+
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    transition: 0.3s ease-in-out;
+    padding: 10px;
+}
+
+.nav-links a:hover {
+    color: #0056b3;
+    transform: scale(1.1);
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    background: #444;
+    transition: 0.3s ease-in-out;
+    padding-top: 60px;
+    display: none;
+    /* Hidden on desktop */
+}
+.sidebar button{
+    background: linear-gradient(45deg, #f72585, #03045e);
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out; margin: 80% 0px 0px 35px;
+}
+
+.sidebar a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+}
+
+.sidebar a:hover {
+    background: #555;
+    cursor: pointer;
+    
+}
+
+.sidebar .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+}
+
+/* Active sidebar */
+.sidebar.active {
+    right: 0;
+}
+
+/* Overlay to close sidebar */
+.overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+.overlay.active {
+    display: block;
+}
+
+/* FormContent */
+.form-content {
+    background-image: url(87846.jpg);
+    width: 100%;
+    height: auto;
+    color: #fff;
+    display: flex;
+}
+
+.form-content ul {
+    width: 50%;
+    margin-left: 50px;
+}
+
+.form-content h1 {
+    width: 90%;
+    margin-top: 75px;
+    margin-left: 20px;
+    font-size: 35px;
+}
+
+.form-content li {
+    width: 70%;
+    margin-left: 40px;
+    margin-top: 20px;
+    text-align: justify;
+    font-size: 20px;
+}
+
+.form {
+    line-height: 33px;
+    width: 40%;
+    height: 80%;
+    border: 1px solid black;
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 57px;
+    border-radius: 12px;
+    border: none;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1), 0 2px 15px rgba(0, 0, 0, 0.1);
+    color: #000;
+}
+
+.form h5,
+h6 {
+    font-weight: lighter;
+}
+
+.form h6 a {
+    text-decoration: none;
+}
+
+.form h4 {
+    font-weight: normal;
+}
+
+.form input {
+    width: 95%;
+    height: 22px;
+    background-color: #f8f9fa;
+    border: none;
+    margin: 3px;
+    border-radius: 5px;
+    padding: 7px;
+}
+
+.form button {
+    background: linear-gradient(45deg, #f72585, #03045e);
+    padding: 14px 40px;
+    color: white;
+    border-radius: 15px;
+    border: none;
+}
+
+.form button:hover {
+    background: linear-gradient(900deg, #03045e, #f72585);
+    cursor: pointer;
+
+}
+
+/* OverView */
+.Overview {
+    margin: 0px;
+    width: 100%;
+    height: auto;
+    padding: 0px;
+    border-radius: 2px;
+    overflow: auto;
+
+}
+
+#title {
+    text-align: center;
+    color: rgb(2, 16, 40);
+    font-size: 34px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.data {
+    width: 98%;
+    margin-top: 40px;
+    justify-content: center;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#over1,
+#over2,
+#over3 {
+    width: 350px;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    color: rgb(91, 111, 129);
+    border: 1px solid white;
+    margin: 10px;
+    padding: 18px;
+    border-radius: 5px;
+    box-shadow: 7px 0px 10px rgb(219, 219, 219);
+    overflow: hidden;
+
+}
+
+#over1 #over2 #over3,
+.body li,
+p {
+    font-size: large;
+}
+
+#over1 #over2 #over3,
+.header {
+    margin-bottom: 10px;
+}
+
+#over1 #over2 #over3,
+.header h5 {
+    font-size: 30px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+
+}
+
+/* Key Highlights */
+
+#key-highlights {
+    background: #d8f3dc;
+    text-align: center;
+    margin-top: 30px;
+    margin: 3px;
+}
+
+#key-highlights h1 {
+    padding-top: 60px;
+    text-align: center;
+}
+
+#key-highlights p {
+    font-size: x-large;
+}
+
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10%;
+    margin-top: 35px;
+    margin-right: 10%;
+}
+
+.boxes div {
+    width: 300px;
+    height: 260px;
+    border-radius: 10px;
+    background: #000;
+    color: #f8f8f8;
+    margin: 15px;
+}
+
+.boxes p {
+    text-align: center;
+    padding: 15%;
+    font-size: x-large;
+}
+
+/* Career Services */
+#career_service {
+    margin-top: 60px;
+    font-size: x-large;
+}
+
+
+#career_service h1 {
+    
+    text-align: center;
+    width: 80%;
+    margin-left: 10%;
+}
+
+#career_service p {
+    text-align: center;
+    justify-content: start;
+    width: 80%;
+    margin-left: 10%;
+    font-size: x-large;
+}
+
+.company_logo {
+    width: 80%;
+    height: auto;
+    margin-left: 10%;
+    margin-top: 40px;
+
+}
+
+.company_logo img {
+    width: 150px;
+    height: 60px;
+    margin-left: 70px;
+    margin-top: 60px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.company_logo img:hover {
+    transform: scale(1.1);
+}
+
+/* image-container */
+.review {
+    width: 280px;
+    height: auto;
+    background-color: #f0eded;
+    border-radius: 6px;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.card_img {
+    width: auto;
+    height: 200px;
+    background-color: aqua;
+    background: url(87846.jpg) no-repeat center;
+    background-size: cover;
+}
+
+
+hr {
+    justify-items: center;
+}
+
+.employee {
+    padding: 5px;
+    line-height: 10px;
+}
+
+.employee p {
+    font-size: 23px;
+    font-weight: bolder;
+    margin: 6px 0px;
+}
+
+.review a {
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.employee img {
+    width: 65px;
+    margin: 2px 0px;
+}
+.employee hr {
+    margin-bottom: 5px;
+}
+
+#image_container {
+   
+    margin-top: 80px;
+}
+
+#image_container_1 {
+    margin-top: 80px;
+    
+}
+
+#image_container h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+#image_container h4 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 200;
+    margin: 0 10%;
+}
+
+#image_container_1 h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+#image_container_1 h4 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 200;
+
+    margin: 0 10%;
+}
+
+.image_reviews {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10%;
+    margin-top: 40px;
+    margin-right: 10%;
+    justify-content: space-between;
+}
+
+.card_img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.card_img:hover {
+    transform: scale(1.15);
+}
+
+/* Course-and-Fee */
+#course_fee {
+    margin-top: 50px;
+    overflow: hidden;
+}
+
+#course_fee h1 {
+    text-align: center;
+}
+
+#course_fee p {
+    font-size: 22px;
+    text-align: center;
+}
+#course_fee button {
+    width: 180px;
+    height: 55px;
+    font-size: 16px;
+    border-radius: 10px;
+    margin: 10px 45%;
+    cursor: pointer;
+    border: 1px solid linear-gradient(45deg, #03045e, #f72585);
+    color: #fff;
+    background: #5f0f40;
+    transition: 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+#course_fee button:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.8);
+    background: linear-gradient(45deg, #03045e, #f72585);
+    color: #fff;
+    border: none;
+
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    overflow: auto;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.popup-content {
+    overflow: auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 85%;
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+.popup-content h1{
+    margin-top: 50px;
+    font-size: xx-large;
+}
+.popup-content p{
+    width:98%;
+}
+
+.close-btn {
+    position: absolute;
+    right: 30px;
+    font-size: 48px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.table {
+    overflow: auto;
+    background: #eaf4f4;
+    margin-top: 40px;
+    border-radius: 5px;
+    padding: 22px;
+    max-width: 90%;
+    text-align: center;
+}
+
+.table td {
+    background: #cce3de;
+    padding: 15px;
+    border-radius: 5px;
+
+}
+
+.table td:nth-child(5) {
+    background: #1982c4;
+    color: #fff;
+}
+
+.table td:nth-child(3) {
+    background: #fff;
+}
+
+
+/* academic_info */
+
+#academic_info {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.para {
+    margin-top: 25px;
+    width: 70%;
+    margin: 10px auto;
+    text-align: start;
+    border: 1px solid #f8f8f8;
+    background-color: #f8f8f8;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.q {
+    font-weight: bold;
+    font-size: 25px;
+}
+/* Footer */
+#footer {
+    background-color: #13293d;
+    height: auto;
+    width: auto;
+    margin-top: 60px;
+    padding: 12px;
+    
+}
+
+.footer_content {
+    display: flex;
+}
+
+
+#footer div {
+    height: auto;
+    padding: 10px;
+    margin-left: 5%;
+}
+.footer_page  {
+    width:100%;
+}
+
+.footer_page li {
+    list-style: none;
+    padding: 6px 0px;
+    font-size: large;
+}
+
+.footer_page a {
+    text-decoration: none;
+    color: #8ecae6;
+}
+
+.footer_page h2 {
+    color: #fff;
+}
+
+.footer_page p {
+    color: #fff;
+}
+
+#footer hr {
+    border: 1px solid #8ecae6;
+    margin-right: 10%;
+    margin-left: 5%;
+}
+
+.footer_foot {
+    width: 80%;
+    margin-left: 50px;
+}
+
+.footer_foot h2 {
+    color: #fff;
+    margin-left: 6%;
+}
+
+.footer_foot a {
+    text-decoration: none;
+    color: #8ecae6;
+}
+
+.footer_foot p {
+    color: #8ecae6;
+    margin-left: 6%;
+    text-align: left;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        /* Hide full navbar on mobile & tablet */
+    }
+
+    .menu-icon {
+        display: block;
+        /* Show hamburger */
+    }
+
+    .sidebar {
+        display: block;
+        /* Enable sidebar */
+        width: 200px;
+    }
+    .form{
+        height: auto;
+    }
+    .sidebar a {
+        font-size: 16px;
+    }
+
+    /* Form-Content */
+    .form-content {
+        height: auto;
+        display: grid;
+    }
+
+    .form-content ul {
+        width: 100%;
+    }
+
+    .form {
+        margin: 8px auto;
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* NavBar */
+    .navbar{
+        overflow: hidden;
+    }
+    .navbar a#logo h2{
+        text-align: center;
+        margin: 0px auto;
+    }
+    .navbar h2 {
+        font-size: x-large;
+    }
+
+    .sidebar {
+        width: 220px;
+    }
+    .sidebar button{
+        margin: 80% 0px 0px 35px;
+    }
+
+    .sidebar a {
+        font-size: 14px;
+    }
+
+    /* Form-Content */
+    .footer_content{
+        overflow: hidden;
+    }
+    .form-content ul{
+        margin: 0;
+        overflow: hidden;
+    }
+    .form-content li {
+        display: none;
+    }
+
+    .form-content h1 {
+        width: 93%;
+        font-size: 23px;
+    }
+
+    .form-content {
+        height: auto;
+        display: grid;
+    }
+
+    .form {
+        width: 80%;
+        margin: 0px auto;
+        margin-bottom: 25px;
+        height: auto;
+        margin-top: 40px;
+        line-height: 33px;
+    }
+
+    /* OverView */
+    .header h5{
+        font-size: 20px;
+    }
+    .body li ,p{
+        font-size: 16px;
+    }
+    #title {
+        font-size: 25px;
+    }
+
+    #over1,
+    #over2,
+    #over3 {
+        width: 310px;
+    }
+
+    /* key-highlights */
+    #key-highlights {
+        overflow: hidden;
+        font-size: medium;
+    }
+    #key-highlights h1{
+        font-size: 20px;
+    }
+
+    #key-highlights #key-cont {
+        font-size: 16px;
+    }
+
+    #key-highlights div {
+        width: 80%;
+        height: auto;
+        margin: 15px auto;
+    }
+
+    
+/* Career Services */
+#career_service {
+    font-size: x-large;
+    overflow: hidden;
+}
+    #career_service p{
+       font-size: 15px; 
+    }
+    
+#career_service img{
+    overflow: hidden;
+    margin: 9px 15px;
+    width: 20%;
+    height: auto;
+}
+/* image-container */
+#image_container {
+    overflow: hidden;
+}
+#image_container h2{
+    overflow: hidden;
+    font-size: 19px;
+    padding: 2px;
+}
+#image_container h4{
+    font-size: 15px;
+}
+#image_container_1 h2{
+    font-size: 18px;
+    overflow: hidden;
+    padding: 5px;
+}
+#image_container_1 h4{
+    font-size: 15px;
+}
+.review{
+    margin: 10px auto;
+}
+.employee p {
+    font-size: larger;
+    margin: 3px 0px;
+}
+.employee img{
+    width: 60px;
+    margin: 4px 0;
+}
+.employee hr {
+    margin-bottom: 5px;
+}
+.employee a {
+    font-size: 15px;
+}
+/* Course-and-Fee */
+#course_fee h1{
+    font-size: 25px;
+}
+#course_fee p{
+    font-size: 15px;
+    padding: 15px;
+}
+#course_fee button{
+    margin: 0px 30%;
+}
+.popup-content {
+    width: 90%;
+}
+.table{
+    margin: 0;
+    padding: 0;
+}
+/* academic_info */
+#academic_info{
+    overflow: hidden;
+}
+#academic_info .q{
+    font-size: 18px;
+}
+#academic_info p{
+    font-size: 15px;
+}
+/* Footer */
+.footer_content{
+    display: grid;
+}
+.footer_content h{
+    font-size: large;
+}
+.footer_content a ,p li{
+    font-size: medium;
+}
+
+}
